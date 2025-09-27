@@ -40,3 +40,11 @@ models:
     # Applies to all files under models/example/
     example:
       +materialized: table
+seeds:
+  my_new_project:
+    +column_types:
+      date: date
+      spend: numeric
+      impressions: integer
+      clicks: integer
+      conversion_value: numeric
