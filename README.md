@@ -47,10 +47,3 @@ The raw data was loaded using dbt seed, which is ideal for a self-contained proj
 This graph shows how the raw source data is transformed into the final unified model used by the dashboard.
 
 ![dbt Lineage Graph](images/dbt_document.png)
-
----
-
-##  воспроизведение (How to Run)
-
-1.  **Load raw data:** Run `dbt seed` to load the CSVs from the `seeds` directory into BigQuery.
-2.  **Transform data:** Run `dbt run` to execute the transformation model and create the final `rpt_marketing_all_channels` table.
