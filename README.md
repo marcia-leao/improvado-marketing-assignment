@@ -44,6 +44,8 @@ The raw data was loaded using dbt seed, which is ideal for a self-contained proj
 
 ### Data Model Lineage
 
+The core transformation logic for this project is contained in a single dbt model, which unions and cleans the source data. The final, unified data model can be found at: `models/marts/marketing/rpt_marketing_all_channels.sql`.
+
 This graph shows how the raw source data is transformed into the final unified model used by the dashboard.
 
 ![dbt Lineage Graph](images/dbt_document.png)
